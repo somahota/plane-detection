@@ -36,10 +36,10 @@ class Config(object):
     input_plane = 3                             # Number of planes as input images. 1: one plane image. 3: three orthogonal plane images
     landmark_count = 16                         # Number of landmarks
     # Training parameters
-    resume = False                              # Whether to train from scratch or resume previous training
+    resume = True                              # Whether to train from scratch or resume previous training
     learning_rate = 0.001
-    max_steps = 100000                          # Number of steps to train
-    save_interval = 25000                       # Number of steps in between saving each model
+    max_steps = 10000                           # Number of steps to train
+    save_interval = 2500                       # Number of steps in between saving each model
     batch_size = 64                             # Training batch size
     dropout = 0.5
     # Parameters for sampling training plane
